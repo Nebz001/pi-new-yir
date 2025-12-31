@@ -514,7 +514,7 @@ function init() {
     rand = Math.floor(Math.random() * 2);
     var offset = snow[i].getBoundingClientRect();
     TweenMax.set(snow[i], {
-      y: -(offset.top + offset.width + 100),
+      y: -900 - Math.random() * 900,
     });
     TweenMax.to(snow[i], Math.random() * 50 + 50, {
       y: 920,
